@@ -15,7 +15,7 @@ header {
 header .logo {
     margin: 10px 20px;
     padding: 0;
-    width: 200px;
+    width: 160px;
 }
 
 header .logo img {
@@ -54,6 +54,7 @@ header nav ul li ul {
     display: none;
     border: 1px solid rgb(158, 158, 158);
     width: 250px;
+    z-index: 10;
 }
 
 header nav ul li:hover ul {
@@ -79,19 +80,154 @@ header nav ul li a {
     padding: 0 20px;
     text-decoration: none;
     display: block;
-    color: #000;
+    color: rgb(47, 47, 47);
     transition: .3s;
 }
 
 header nav ul li a:hover {
-    color: #fff;
-    background-color: #000;
+    /* color: #fff; */
+    background-color: rgb(199, 199, 199);
 }
 
 .main {
     width: 100%;
-    height: 80vh;
-    background-image: url("https://static.uniregistry.com/assets/img/landing-pages/bg-parking.jpg");
+    background: linear-gradient(to right, rgba(255,255,255,.2), rgba(255,255,255,.2)), 
+                url("https://static.uniregistry.com/assets/img/landing-pages/bg-parking.jpg");
     background-position: center;
     background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    padding-bottom: 30px;
+}
+
+.main .head h2{
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: rgb(47, 47, 47);
+    text-shadow: 0px 3px 5px rgba(0,0,0,.5);
+}
+
+.main .sub_head h3 {
+    margin: 0;
+    padding: 10px 10px 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing:3px;
+    color: rgb(47, 47, 47);
+    text-shadow: 0px 2px 3px rgba(0,0,0,.4);
+}
+
+.main .big {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    height: 350px;
+}
+
+.main .link {
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.main .left{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.main .link .block {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 70px;
+    position: relative;
+}
+
+.main .link .block .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    transition: .2s;
+}
+
+.main .left .block .container {
+    left: 70%;
+}
+
+.main .right .block .container {
+    left: 30%;
+}
+
+.main .link .block .container .icon {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    height: 100%;
+    font-size: 20px;
+    line-height: 50px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    color: rgb(51, 51, 51);
+    text-shadow: 0px 3px 5px rgba(0,0,0,.2);
+    transition: .2s;
+}
+
+.main .link .block .container .name {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 75%;
+    height: 100%;
+    float: right;
+    font-size: 15px;
+    line-height: 50px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    color: rgb(51, 51, 51);
+    text-shadow: 0px 2px 3px rgba(0,0,0,.2);
+}
+
+.main .link .block .container:hover{
+    cursor: pointer;
+    transform: translate(-50%, -55%);
+}
+
+.main .link .block .container:hover .icon {
+    background-color: rgb(199, 199, 199);
+}
+
+.main .link .block .container:hover .icon,
+.main .link .block .container:hover .name {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); 
+}
+
+.foot {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: rgb(47, 47, 47);
 }
