@@ -53,7 +53,7 @@ header nav ul li ul {
     background-color: #fff;
     display: none;
     border: 1px solid rgb(158, 158, 158);
-    width: 300px;
+    width: 250px;
 }
 
 header nav ul li:hover ul {
